@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://towtruck18.ru/sitemap_local.xml
+Disallow:
