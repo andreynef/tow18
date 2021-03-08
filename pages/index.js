@@ -124,7 +124,7 @@ export default function Index(props) {
             <Grid item container justify={'space-around'}>
               <Grid item className={classes.textContainer}>
                 <Typography variant={'subtitle1'} style={{fontSize: matchesSM? '1rem':null}}>
-                  nЭвакуация мототехники, снегоходов <span style={{fontWeight: 700}}>1200 руб</span><br/>
+                  Эвакуация мототехники, снегоходов <span style={{fontWeight: 700}}>1200 руб</span><br/>
                   Седаны <span style={{fontWeight: 700}}>1500 руб</span><br/>
                   Кроссоверы и минивены <span style={{fontWeight: 700}}>1800 руб</span><br/>
                   Джипы начиная с прадо <span style={{fontWeight: 700}}>2000 руб</span><br/>

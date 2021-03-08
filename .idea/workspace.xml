@@ -17,7 +17,6 @@
       <change beforePath="$PROJECT_DIR$/npm" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/sitemap.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/sitemap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615233603299</updated>
-      <workItem from="1615233607339" duration="325000" />
+      <workItem from="1615233607339" duration="680000" />
     </task>
     <servers />
   </component>
