@@ -19,8 +19,9 @@ export default class MyDocument extends Document {
           <link rel="icon" href="/favicon.png" />{/*добавляем картинку фавикон*/}
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Caveat|Raleway:100,400,400i,700|Roboto:300,400,500,700&display=swap"
+            href="https://fonts.googleapis.com/css?family=Caveat|Raleway:100,400,400i,700|Roboto:300,400,500,700|Galdeano:100,400,400i,700&display=swap"
           />{/*добавляем нужные шрифты*/}
+
         </Head>
         <body style={{margin:0}}>{/*сброс дефолт полей*/}
         <Main />

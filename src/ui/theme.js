@@ -37,11 +37,11 @@ const theme = createMuiTheme({
       fontWeight: 500,
     },
     h1: {
-      fontFamily: 'Raleway',
+      fontFamily: 'Galdeano',
       fontWeight: 700,
       fontSize: '2.5rem',
       color: arcBlue,
-      lineHeigh: 1.5
+      lineHeight: 1.5
     },
     h3: {
       fontFamily: 'Pacifico',
@@ -61,7 +61,8 @@ const theme = createMuiTheme({
       lineHeight: 1
     },
     subtitle1: {
-      fontWeight: 300,
+      fontFamily: 'Galdeano',
+      fontWeight: 700,
       fontSize: '1.25rem',
       color: arcGrey,
     },

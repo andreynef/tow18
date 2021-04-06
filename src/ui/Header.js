@@ -48,10 +48,6 @@ const useStyles = makeStyles(theme => ({
     },
 
   },
-  logo: {
-    // height: '6em',
-    width: '100%',
-  },
   logoContainer: {
     padding:0,//убрать у обетки кнопки отступы
     // padding: '2em 2em 2em 4em',
@@ -59,13 +55,21 @@ const useStyles = makeStyles(theme => ({
     '&:hover': {//аналогия с sсss со вложенностью селектора. Убрать затемненность при наведении на лого.
       backgroundColor: 'transparent'
     },
-    [theme.breakpoints.down('md')]: {//mediaquery для среднего размера экрана
+    [theme.breakpoints.down('md')]: {//media для среднего размера экрана
       width: '200px',
     },
     [theme.breakpoints.down('xs')]: {
       width: '120px',
       // padding: '1em 1em 1em 2em',
     },
+  },
+  logoOwl: {
+    // height: '6em',
+    width: '80%',
+  },
+  logoTruck: {
+    // height: '6em',
+    width: '100%',
   },
   // firstContainer: {
   //   padding:'12em 5em',
@@ -84,7 +88,7 @@ const useStyles = makeStyles(theme => ({
     // border: '1px solid red',
   },
   headContainerOne: {
-    padding:"2em 2em 2em 2em",
+    padding:"2em 2em 0 2em",
     backgroundColor: theme.palette.common.fon,
     // backgroundImage: `url(${head})`,
     // backgroundPosition: 'center',
@@ -325,30 +329,48 @@ export default function Header(props) {
     <>
       {/*1 box*/}
         <Grid container direction={'row'} justify={'space-between'} className={classes.headContainerOne}>
-          <Grid item  >
+          <Grid item>
             <Button component={Link} href={'/'}  className={classes.logoContainer} onClick={() => {
               props.setValue(0)
             }} disableRipple>{/*обернуть лого в кнопку с онкликом установки value на домашнюю страницу*/}
-              <img alt={'company logo'} src={'/assets/owl.png'} className={classes.logo}/>
+              <img alt={'company logo'} src={'/assets/owl.png'} className={classes.logoOwl}/>
             </Button>
+            <Hidden smUp>
+              <Grid item container justify={'flex-end'} style={{marginTop:10}}>
+                <Grid item style={{marginRight:10, marginTop:matchesXS?1:5}}>
+                  <img src={'/assets/telephone.svg'} alt={'phone'} style={{width:matchesXS?12:15}}/>
+                </Grid>
+                <Grid item >
+                  <Typography variant={'body1'} style={{fontSize: matchesXS? '0.8rem':'1.1rem'}}>
+                    <a href={'tel: 89048350675'} style={{textDecoration: 'none', color:'black'}}>tel: 8(904)835-0675</a>
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Hidden>
           </Grid>
-          <Hidden smDown>
-            <Grid item style={{width:'35%', paddingTop: '1em'}}>
-              <img src={'/assets/logo2.png'} alt={'truck b&w'} style={{width:'100%'}}/>
+            <Grid item container direction={'column'} align={'center'} style={{width:matchesXS?'45%':'30%', paddingTop: '1em'}}>
+              <Typography variant={'h1'} style={{fontSize: matchesXS? '2.2rem':'3.5rem', color: '#008000', lineHeight:'1.2rem'}}>
+                 Towtruck
+              </Typography>
+              <Typography variant={'subtitle1'} style={{fontSize:matchesXS? '1.5rem':'2.2rem'}}>
+                 эвакуатор
+              </Typography>
             </Grid>
-          </Hidden>
           {/*tel+working block*/}
           <Grid item container justify={'flex-end'} style={{width:matchesXS?'45%':'270px'}} >
-            <Grid item container justify={'flex-end'}>
-              <Grid item style={{marginRight:10, marginTop:matchesXS?1:5}}>
-                <img src={'/assets/telephone.svg'} alt={'phone'} style={{width:matchesXS?12:15}}/>
+            <Hidden smDown>
+              <Grid item container justify={'flex-end'}>
+                <Grid item style={{marginRight:10, marginTop:matchesXS?1:5}}>
+                  <img src={'/assets/telephone.svg'} alt={'phone'} style={{width:matchesXS?12:15}}/>
+                </Grid>
+                <Grid item >
+                  <Typography variant={'body1'} style={{fontSize: matchesXS? '0.8rem':'1.1rem'}}>
+                    <a href={'tel: 89048350675'} style={{textDecoration: 'none', color:'black'}}>tel: 8(904)835-0675</a>
+                  </Typography>
+                </Grid>
               </Grid>
-              <Grid item >
-                <Typography variant={'body1'} style={{fontSize: matchesXS? '0.8rem':'1.1rem'}}>
-                  <a href={'tel: 89048350675'} style={{textDecoration: 'none', color:'black'}}>tel: 8(904)835-0675</a>
-                </Typography>
-              </Grid>
-            </Grid>
+              <img src={'/assets/logo2.png'} alt={'truck b&w'} className={classes.logoTruck}/>
+            </Hidden>
           </Grid>
   {/*  tel work end  */}
         </Grid>

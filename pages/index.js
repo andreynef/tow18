@@ -86,6 +86,13 @@ export default function Index(props) {
         <meta property={'og:title'} content={'Эвакуатор в Ижевске | Towtruck18'} key={'og:title'}/>{/*добавляем open graph превью для SEO. Подробности в www.ogp.me */}
         <meta property={'og:url'} content={'towTruck18.ru/'} key={'og:url'}/>{/*добавляем ссылку на страницу сайта */}
         <link rel={'canonical'} key={'canonical'} href={'towTruck18.ru/'}/>{/*дефолтный главный адрес страницы. Зависит от настроек DNS*/}
+        {/*<script async src="https://www.googletagmanager.com/gtag/js?id=AW-415651018"></script>*/}
+        {/*<script>*/}
+        {/*  window.dataLayer = window.dataLayer || [];*/}
+        {/*  function gtag(){dataLayer.push(arguments);}*/}
+        {/*  gtag('js', new Date());*/}
+        {/*  gtag('config', 'AW-415651018');*/}
+        {/*</script>*/}
       </Head>
       {/*--------first Block--------*/}
       <Grid item container className={classes.firstContainer}>
