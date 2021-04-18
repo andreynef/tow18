@@ -125,9 +125,7 @@ export default function Photos(props) {
       <img alt={'photo'} src={'/assets/2.jpg'} className={classes.img}/>
       <img alt={'photo'} src={'/assets/3.jpg'} className={classes.img}/>
       <img alt={'photo'} src={'/assets/5.jpg'} className={classes.img}/>
-      <img alt={'photo'} src={'/assets/7.jpg'} className={classes.img}/>
-      <img alt={'photo'} src={'/assets/9.jpg'} className={classes.img}/>
-      <img alt={'photo'} src={'/assets/10.jpg'} className={classes.img}/>
+
       <img alt={'photo'} src={'/assets/add1.jpg'} className={classes.img}/>
       <img alt={'photo'} src={'/assets/add2.jpg'} className={classes.img}/>
       <img alt={'photo'} src={'/assets/add3.jpg'} className={classes.img}/>
