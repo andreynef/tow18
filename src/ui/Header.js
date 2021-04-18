@@ -369,7 +369,7 @@ export default function Header(props) {
                   </Typography>
                 </Grid>
               </Grid>
-              <img src={'/assets/logo2.png'} alt={'truck b&w'} className={classes.logoTruck}/>
+              <img src={'/assets/500.png'} alt={'truck b&w'} className={classes.logoTruck}/>
             </Hidden>
           </Grid>
   {/*  tel work end  */}

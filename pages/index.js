@@ -101,7 +101,7 @@ export default function Index(props) {
             variant={'h1'}
             style={{color:'white', lineHeight:1.3, fontSize:matchesXS?'1.8rem':matchesSM? '2.1rem':null}}
           >
-            Эвакуация авто в Ижевске (до 2.5т) <br/>
+            Эвакуация авто и спецтехники в Ижевске <br/>
             <span style={{lineHeight:1.2, fontSize:matchesXS?'1.5rem':matchesSM? '1.6rem':'1.9rem'}}>по УР и РФ</span>
           </Typography>
         </Grid>
@@ -131,15 +131,17 @@ export default function Index(props) {
             <Grid item container justify={'space-around'}>
               <Grid item className={classes.textContainer}>
                 <Typography variant={'subtitle1'} style={{fontSize: matchesSM? '1rem':null}}>
+                  При предварительном заказе скидки. <br/>
                   Эвакуация мототехники, снегоходов <span style={{fontWeight: 700}}>1200 руб</span><br/>
                   Седаны <span style={{fontWeight: 700}}>1500 руб</span><br/>
                   Кроссоверы и минивены <span style={{fontWeight: 700}}>1800 руб</span><br/>
                   Джипы начиная с прадо <span style={{fontWeight: 700}}>2000 руб</span><br/>
                   Межгород <span style={{fontWeight: 700}}>от 50 руб/км</span><br/>
+                  Cпецтехника и коммерческий транспорт цена договорная <br/>
                 </Typography>
               </Grid>
               <Grid item container className={classes.vehicle} alignItems={'center'}>
-                <img alt={'my vehicle'} src={'/assets/7.jpg'} className={classes.vehicleImg}/>
+                <img alt={'my vehicle'} src={'/assets/1500.jpg'} className={classes.vehicleImg}/>
               </Grid>
             </Grid>
           </Grid>
