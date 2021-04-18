@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
   firstContainer: {
     padding:'12em 5em',
     backgroundColor: '#fafafa',
-    backgroundImage: `url('/assets/first44.jpg')`,
+    backgroundImage: `url('/assets/main2.jpg')`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     // backgroundAttachment: 'fixed',//фикс картинка при прокрутке
@@ -49,7 +49,8 @@ const useStyles = makeStyles(theme => ({
 
     width: '100%',
     [theme.breakpoints.down('md')]: {
-      padding: '10em 2em'
+      padding: '10em 2em',
+      backgroundPosition: 'left',
     },
   },
   firstButton: {
@@ -141,7 +142,7 @@ export default function Index(props) {
                 </Typography>
               </Grid>
               <Grid item container className={classes.vehicle} alignItems={'center'}>
-                <img alt={'my vehicle'} src={'/assets/1500.jpg'} className={classes.vehicleImg}/>
+                <img alt={'my vehicle'} src={'/assets/800.png'} className={classes.vehicleImg}/>
               </Grid>
             </Grid>
           </Grid>
