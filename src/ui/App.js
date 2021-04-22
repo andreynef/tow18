@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import Header from "./ui/Header";
+import Header from "./Header";
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
-import myTheme from "./ui/Theme";
+import myTheme from "./Theme";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import Footer from "./ui/Footer";
-import LandingPage from "./LandingPage";
+import Footer from "./Footer";
+// import LandingPage from "./LandingPage";
 
 import Contacts from "../../pages/contacts";
 import {makeStyles} from "@material-ui/styles";
@@ -34,12 +34,12 @@ function App() {
               setSelectedIndex={setSelectedIndex}
             />
             <Switch>{/*рендерится в зависимости от Route path*/}
-              <Route
-                exact
-                path={'/'}
-                // component={()=><Index setValue={setValue} selectedIndex={selectedIndex}/>}//проверить возможность писания так чем рендер
-                render={(props)=><LandingPage {...props} setValue={setValue} setSelectedIndex={setSelectedIndex}/>}
-              />
+              {/*<Route*/}
+              {/*  exact*/}
+              {/*  path={'/'}*/}
+              {/*  // component={()=><Index setValue={setValue} selectedIndex={selectedIndex}/>}//проверить возможность писания так чем рендер*/}
+              {/*  render={(props)=><LandingPage {...props} setValue={setValue} setSelectedIndex={setSelectedIndex}/>}*/}
+              {/*/>*/}
               {/*<Route exact path={'/services'} component={()=><Services setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>*/}
               {/*<Route exact path={'/photos'} component={()=><Photos setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>*/}
               <Route exact path={'/contacts'} component={()=><Contacts setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>

@@ -2,12 +2,31 @@ import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheets } from '@material-ui/core/styles';
 import theme from '../src/ui/theme';
+import { GA_TRACKING_ID } from '../lib/gtag'
+
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>{/*добавить head к кажд pages для seo*/}
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <meta property={'og:type'} content={'website'}/>{/*добавляем open graph превью для SEO. Подробности в www.ogp.me */}
