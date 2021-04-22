@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9abda8a0-1cc6-408c-8dd8-7d974a916873" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/photos.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/photos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/towtruck18.ru/public/sitemap_local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/towtruck18.ru/public/sitemap_local.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Skillbox/5.vue/vueOnlineStoreSkillbox" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -78,6 +80,7 @@
       <workItem from="1617701168548" duration="12824000" />
       <workItem from="1618747562568" duration="3075000" />
       <workItem from="1618750982922" duration="1536000" />
+      <workItem from="1618752801199" duration="72000" />
     </task>
     <servers />
   </component>

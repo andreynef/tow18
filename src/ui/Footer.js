@@ -27,7 +27,8 @@ export default function Footer(props) {
       <Grid container justify={'center'} >
         <Grid item>
           <Typography variant={'body1'} align={'center'} style={{color: theme.palette.common.blue, fontSize: '1rem'}}>
-            <a href={'tel: 89048350675'} style={{textDecoration: 'none', color:'black'}}>8(904)835-0675</a>
+            {/*<a href={'tel: 89048350675'} style={{textDecoration: 'none', color:'black'}}>8(904)835-0675</a>*/}
+            <span style={{textDecoration: 'none', color:'black'}}>8(904)835-0675</span>
           </Typography>
           <Typography align={'center'} style={{color: 'black', fontSize: matchesXS?'0.7rem':'0.8rem'}}>
             НДП Сивков И.О.
