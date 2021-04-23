@@ -38,7 +38,7 @@ export default function MyApp(props) {
     }
   }, []);
 
-  const router = useRouter();
+  const router = useRouter()
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url)

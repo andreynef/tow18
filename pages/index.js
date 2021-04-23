@@ -6,6 +6,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Head from "next/head";
 import Button from "@material-ui/core/Button";
 import Contacts from "./contacts";
+import * as gtag from '../lib/gtag'
 
 const useStyles = makeStyles(theme => ({
   textContainer: {
